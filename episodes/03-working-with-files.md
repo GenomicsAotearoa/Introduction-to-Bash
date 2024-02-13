@@ -580,4 +580,5 @@ Starting in the `~/shell_data/untrimmed_fastq/` directory, do the following:
 - You can view file permissions using `ls -l` and change permissions using `chmod`.
 - The `history` command and the up arrow on your keyboard can be used to repeat recently used commands.
 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
