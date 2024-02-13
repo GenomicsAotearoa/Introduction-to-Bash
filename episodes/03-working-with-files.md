@@ -35,7 +35,7 @@ have two results files, which are stored in our `untrimmed_fastq` directory.
 Navigate to your `untrimmed_fastq` directory:
 
 ```bash
-$ cd ~/obss_2023/commandline/shell_data/untrimmed_fastq
+$ cd ~/shell_data/untrimmed_fastq
 ```
 
 We are interested in looking at the FASTQ files in this directory. We can list
@@ -236,17 +236,17 @@ This will print out all of the contents of the `SRR098026.fastq` to the screen.
 
 ## Exercise
 
-1. Print out the contents of the `~/obss_2023/commandline/shell_data/untrimmed_fastq/SRR097977.fastq` file. What is the last line of the file?
+1. Print out the contents of the `~/shell_data/untrimmed_fastq/SRR097977.fastq` file. What is the last line of the file?
 2. From your home directory, and without changing directories,
    use one short command to print the contents of all of the files in
-   the `~/obss_2023/commandline/shell_data/untrimmed_fastq` directory.
+   the `~/shell_data/untrimmed_fastq` directory.
 
 ::::::::::::::: solution
 
 ## Solution
 
 1. The last line of the file is `C:CCC::CCCCCCCC<8?6A:C28C<608'&&&,'$`.
-2. `cat ~/obss_2023/commandline/shell_data/untrimmed_fastq/*`
+2. `cat ~/shell_data/untrimmed_fastq/*`
 
 :::::::::::::::::::::::::
 
@@ -400,7 +400,7 @@ NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
 ```
 
 All but one of the nucleotides in this read are unknown (`N`). This is a pretty bad read!
-Line 4 shows the quality for each nucleotide in the read. We'll cover the Fastq format more in depth tomorrow in when we look at [assessing read quality](https://otagobioinformaticsspringschool.github.io/wrangling-genomics-nesi/02-quality-control.html) in the DNA variant calling workshop.
+Line 4 shows the quality for each nucleotide in the read. We don't need to know too much about read quality for this workshop.
 
 ## Creating, moving, copying, and removing
 
@@ -418,7 +418,7 @@ and change the file permissions so that we can read from, but not write to, the 
 
 First, let's make a copy of one of our FASTQ files using the `cp` command.
 
-Navigate to the `~/obss_2023/commandline/shell_data/untrimmed_fastq` directory and enter:
+Navigate to the `~/shell_data/untrimmed_fastq` directory and enter:
 
 ```bash
 $ cp SRR098026.fastq SRR098026-copy.fastq
@@ -545,7 +545,7 @@ you will be asked whether you want to override your permission settings.
 
 ## Exercise
 
-Starting in the `~/obss_2023/commandline/shell_data/untrimmed_fastq/` directory, do the following:
+Starting in the `~/shell_data/untrimmed_fastq/` directory, do the following:
 
 1. Make sure that you have deleted your backup directory and all files it contains.
 2. Create a backup of each of your FASTQ files using `cp`. (Note: You'll need to do this individually for each of the two FASTQ files. We haven't
