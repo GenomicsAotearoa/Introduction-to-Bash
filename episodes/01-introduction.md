@@ -22,7 +22,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-**This lesson has been adapted from the original [Data Carpentry - Shell Genomics](https://datacarpentry.org/shell-genomics/) to be run using the NeSI infrastructure as part of the Otago Bioinformatics Spring School instead of AWS.**
+**This lesson has been adapted from the original [Data Carpentry - Shell Genomics](https://datacarpentry.org/shell-genomics/) to be run using the NeSI infrastructure as part of the Genomics Aotearoa and NeSI training partnership.**
 
 ## What is a shell and why should I care?
 
@@ -216,7 +216,7 @@ $ ls
 ```
 
 ```output
-obss_2023
+shell_data
 ```
 
 `ls` prints the names of the files and directories in the current directory in
@@ -228,11 +228,11 @@ The command to change locations in our file system is `cd`, followed by a
 directory name to change our working directory.
 `cd` stands for "change directory".
 
-Let's say we want to navigate to the `obss_2023/commandline/shell_data` directory we saw above. We can
+Let's say we want to navigate to the `shell_data` directory we saw above. We can
 use the following command to get there:
 
 ```bash
-$ cd obss_2023
+$ cd shell_data
 ```
 
 Let's look at what is in this directory:
@@ -242,40 +242,9 @@ $ ls
 ```
 
 ```output
-commandline  genome_assembly  genomic_dna  intro_git  intro_snakemake  nanopore
-```
-
-And we'll then navigate into `commandline`
-
-```bash
-cd commandline
-```
-
-and take a look
-
-```bash
-$ ls
-```
-
-```output
-shell4b_data  shell_data
-```
-
-And then we'll `cd` into `shell_data`
-
-```bash
-cd shell_data
-```
-
-And take a look
-
-```bash
-ls
-```
-
-```output
 sra_metadata  untrimmed_fastq
 ```
+
 
 We can make the `ls` output more comprehensible by using the **flag** `-F`,
 which tells `ls` to add a trailing `/` to the names of directories:
@@ -370,17 +339,13 @@ $ cd
 then enter:
 
 ```bash
-$ cd obss_2023/com<tab>/she<tab>_<tab>
+$ cd shell_data/unt<tab>/
 ```
 
-The shell will fill in the rest of the directory name for `commandline` and then `shell_data`.
+The shell will fill in the rest of the directory name for `shell_data`.
 
-Now change directories to `untrimmed_fastq` in `shell_data`
+Note that here we have navigated from home, directly to the untrimmed_fastq directory. In other words, we skipped moving through shell_data. 
 
-```bash
-$ cd shell_data
-$ cd untrimmed_fastq
-```
 
 Using tab complete can be very helpful. However, it will only autocomplete
 a file or directory name if you've typed enough characters to provide
